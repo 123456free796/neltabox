@@ -8679,6 +8679,7 @@ var beepbox;
 				option("cut", "Cut Pattern (X)", false, false),
                 option("transposeUp", "Shift Notes Up (+)", false, false),
                 option("transposeDown", "Shift Notes Down (-)", false, false),
+                option("player", "Song Player", false, false),
                 option("duration", "Custom Song Size (Q)", false, false),
                 option("import", "Import JSON", false, false),
 				option("cleanS", "Clean Slate", false, false),
@@ -9380,6 +9381,9 @@ var beepbox;
                     case "transposeDown":
                         _this._transpose(false);
                         break;
+                    case "player":
+                    location.href = "./player/index.html#" + _this._doc.song.toBase64String();
+                    break;
                     case "import":
                         _this._openPrompt("import");
                         break;
