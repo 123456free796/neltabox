@@ -262,9 +262,8 @@ var beepbox;
         };
         return Config;
     }());
-    Config.scaleNames = ["chromatic", "easy :)", "easy :(", "island :)", "island :(", "blues :)", "megalovania", "major", "minor", "dbl harmonic :)", "dbl harmonic :(", "enigma", "monotonic", "no dabbing"];
+    Config.scaleNames = ["easy :)", "easy :(", "island :)", "island :(", "blues :)", "megalovania", "major", "minor", "dbl harmonic :)", "dbl harmonic :(", "chromatic", "enigma", "monotonic", "no dabbing"];
     Config.scaleFlags = [
-        [true, true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true ],
         [true, false, true,  false, true,  false, false, true,  false, true,  false, false],
         [true, false, false, true,  false, true,  false, true,  false, false, true,  false],
         [true, false, false, false, true,  true,  false, true,  false, false, false, true ],
@@ -275,6 +274,7 @@ var beepbox;
         [true, false, true,  true,  false, true,  false, true,  true,  false, true,  false],
         [true, true,  false, false, true,  true,  false, true,  true,  false, false, true ],
         [true, false, true,  true,  false, false, true,  true,  true,  false, false, true ],
+        [true, true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true ],
         [true, false, true,  false, true,  false, true,  false, true,  false, true,  false],
 		[true, false, false, false, false, false, false, false, false, false, false, false],
 		[true, true,  false, true,  true,  true,  true,  true,  true,  false, true,  false],
@@ -283,13 +283,13 @@ var beepbox;
     Config.blackKeyNameParents = [-1,   1,     -1,    1,    -1,    1,   -1,    -1,    1,    -1,    1,   -1    ];
     Config.pitchNames =          ["C", null, "D", null, "E", "F", null, "G", null, "A", null, "B"];
 	
-	Config.themeNames = ["Nepbox", "Modbox", "ModBox 2.0", "Artic", "Cinnamon Roll [!]", "Ocean", "Rainbow [!]", "Float [!]", "Windows", "Grassland", "Dessert", "Kahootiest", "Beam to the Bit [!]", "Pretty Egg", "Poniryoshka", "Gameboy [!]", "Woodkid", "Midnight", "Snedbox", "unnamed", "Piano [!] [↻]", "Halloween", "FrozenOver❄️"];
+	Config.themeNames = ["Nepbox", "Laffey", "Modbox", "ModBox 2.0", "Artic", "Cinnamon Roll [!]", "Ocean", "Rainbow [!]", "Float [!]", "Windows", "Grassland", "Dessert", "Kahootiest", "Beam to the Bit [!]", "Pretty Egg", "Poniryoshka", "Gameboy [!]", "Woodkid", "Midnight", "Snedbox", "unnamed", "Piano [!] [↻]", "Halloween", "FrozenOver❄️"];
 	
-	volumeColorPallet =            ["#00fff5", "#777777", "#c4ffa3", "#42dcff", "#ba8418", "#090b3a", "#ff00cb", "#878787", "#15a0db", "#74bc21", "#ff0000", "#66bf39", "#fefe00", "#f01d7a", "#ffc100", "#8bac0f", "#ef3027", "#aa5599", "#a53a3d", "#ffffff", "#ff0000", "#9e2200", "#ed2d2d"]
-	sliderOneColorPallet =         ["#00fff5", "#9900cc", "#00ff00", "#ffffff", "#ba8418", "#5982ff", "#ff0000", "#ffffff", "#2779c2", "#a0d168", "#ff6254", "#ff3355", "#fefe00", "#6b003a", "#4b4b4b", "#9bbc0f", "#e83c4e", "#445566", "#a53a3d", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
-	sliderOctaveColorPallet =      ["#484848", "#444444", "#00ff00", "#a5eeff", "#e59900", "#4449a3", "#43ff00", "#ffffff", "#295294", "#74bc21", "#ff5e3a", "#eb670f", "#0001fc", "#ffb1f4", "#5f4c99", "#9bbc0f", "#ef3027", "#444444", "#444444", "#ffffff", "#211616", "#9e2200", "#ffffff"]
-	sliderOctaveNotchColorPallet = ["#9150ff", "#886644", "#ffffff", "#cefffd", "#ffff25", "#3dffdb", "#0400ff", "#c9c9c9", "#fdd01d", "#20330a", "#fff570", "#ff3355", "#fa0103", "#b4001b", "#ff8291", "#8bac0f", "#ffedca", "#aa5599", "#a53a3d", "#ffffff", "#ff4c4c", "#701800", "#ed2d2d"]
-	buttonColorPallet =            ["#484848", "#ffffff", "#00ff00", "#42dcff", "#ffff25", "#4449a3", "#f6ff00", "#000000", "#fdd01d", "#69c400", "#fffc5b", "#66bf39", "#fefe00", "#75093e", "#818383", "#8bac0f", "#ffedca", "#000000", "#ffffff", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
+	volumeColorPallet =            ["#00fff5", "#f2b3ff", "#777777", "#c4ffa3", "#42dcff", "#ba8418", "#090b3a", "#ff00cb", "#878787", "#15a0db", "#74bc21", "#ff0000", "#66bf39", "#fefe00", "#f01d7a", "#ffc100", "#8bac0f", "#ef3027", "#aa5599", "#a53a3d", "#ffffff", "#ff0000", "#9e2200", "#ed2d2d"]
+	sliderOneColorPallet =         ["#00fff5", "#f2b3ff", "#9900cc", "#00ff00", "#ffffff", "#ba8418", "#5982ff", "#ff0000", "#ffffff", "#2779c2", "#a0d168", "#ff6254", "#ff3355", "#fefe00", "#6b003a", "#4b4b4b", "#9bbc0f", "#e83c4e", "#445566", "#a53a3d", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
+	sliderOctaveColorPallet =      ["#484848", "#852929", "#444444", "#00ff00", "#a5eeff", "#e59900", "#4449a3", "#43ff00", "#ffffff", "#295294", "#74bc21", "#ff5e3a", "#eb670f", "#0001fc", "#ffb1f4", "#5f4c99", "#9bbc0f", "#ef3027", "#444444", "#444444", "#ffffff", "#211616", "#9e2200", "#ffffff"]
+	sliderOctaveNotchColorPallet = ["#9150ff", "#f2b3ff", "#886644", "#ffffff", "#cefffd", "#ffff25", "#3dffdb", "#0400ff", "#c9c9c9", "#fdd01d", "#20330a", "#fff570", "#ff3355", "#fa0103", "#b4001b", "#ff8291", "#8bac0f", "#ffedca", "#aa5599", "#a53a3d", "#ffffff", "#ff4c4c", "#701800", "#ed2d2d"]
+	buttonColorPallet =            ["#484848", "#343c99", "#ffffff", "#00ff00", "#42dcff", "#ffff25", "#4449a3", "#f6ff00", "#000000", "#fdd01d", "#69c400", "#fffc5b", "#66bf39", "#fefe00", "#75093e", "#818383", "#8bac0f", "#ffedca", "#000000", "#ffffff", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
 	
 	// For Piano Theme
 	noteOne =            ["#000000", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#9e2200"]
@@ -306,18 +306,18 @@ var beepbox;
 	noteTwelve =         ["#ffffff","#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#9e2200"]
 	
 	// Gives Color of the Sheet
-	baseNoteColorPallet =           ["#9150ff", "#886644", "#c4ffa3", "#eafffe", "#f5bb00", "#090b3a", "#ffaaaa", "#ffffff", "#da4e2a", "#20330a", "#fffc5b", "#45a3e5", "#fefe00", "#fffafa", "#1a2844", "#9bbc0f", "#fff6fe", "#222222", "#886644", "#ffffa0", "#ffffff", "#681701", "#88bce8"]
-	secondNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffceaa", "#ededed", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]
-	thirdNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffdfaa", "#cecece", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
-	fourthNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#fff5aa", "#bababa", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
-	sixthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e8ffaa", "#afafaf", "#444444", "#444444", "#444444", "#444444", "#fa0103", "#444444", "#faf4c3", "#8bac0f", "#41323b", "#222222", "#10997e", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
-	seventhNoteColorPallet =        ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#bfffb2", "#a5a5a5", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#e5f0f9"]
-	eigthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2ffc8", "#999999", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#ffffff"]
-	fifthNoteColorPallet =          ["#990000", "#446688", "#96fffb", "#b7f1ff", "#f5bb00", "#3f669b", "#b2ffe4", "#8e8e8e", "#5d9511", "#74bc21", "#ff5e3a", "#864cbf", "#111111", "#ff91ce", "#dabbe6", "#306230", "#fff6fe", "#444444", "#60389b", "#ffffa0", "#ffffff", "#914300", "#e5f0f9"]
-	ninthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2f3ff", "#828282", "#444444", "#444444", "#444444", "#444444", "#0001fc", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
-	tenNoteColorPallet =            ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2b3ff", "#777777", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
-	elevenNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e0b2ff", "#565656", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
-	twelveNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffafe9", "#282828", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]	
+	baseNoteColorPallet =           ["#9150ff", "#dbbeed", "#886644", "#c4ffa3", "#eafffe", "#f5bb00", "#090b3a", "#ffaaaa", "#ffffff", "#da4e2a", "#20330a", "#fffc5b", "#45a3e5", "#fefe00", "#fffafa", "#1a2844", "#9bbc0f", "#fff6fe", "#222222", "#886644", "#ffffa0", "#ffffff", "#681701", "#88bce8"]
+	secondNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffceaa", "#ededed", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]
+	thirdNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffdfaa", "#cecece", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
+	fourthNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#fff5aa", "#bababa", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
+	sixthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e8ffaa", "#afafaf", "#444444", "#444444", "#444444", "#444444", "#fa0103", "#444444", "#faf4c3", "#8bac0f", "#41323b", "#222222", "#10997e", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
+	seventhNoteColorPallet =        ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#bfffb2", "#a5a5a5", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#e5f0f9"]
+	eigthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2ffc8", "#999999", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#ffffff"]
+	fifthNoteColorPallet =          ["#990000", "#6b1313", "#446688", "#96fffb", "#b7f1ff", "#f5bb00", "#3f669b", "#b2ffe4", "#8e8e8e", "#5d9511", "#74bc21", "#ff5e3a", "#864cbf", "#111111", "#ff91ce", "#dabbe6", "#306230", "#fff6fe", "#444444", "#60389b", "#ffffa0", "#ffffff", "#914300", "#e5f0f9"]
+	ninthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2f3ff", "#828282", "#444444", "#444444", "#444444", "#444444", "#0001fc", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
+	tenNoteColorPallet =            ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2b3ff", "#777777", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
+	elevenNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e0b2ff", "#565656", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
+	twelveNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffafe9", "#282828", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]	
 	
 	channelOneBrightColorPallet =         ["#f75dff"]
 	channelTwoBrightColorPallet =         ["#ff0000"]
@@ -353,8 +353,8 @@ var beepbox;
 	channelFifteenDimColorPallet =     ["#868686"]
 	channelSixteenDimColorPallet =     ["#6a3500"]
 	
-    Config.keyNames =      ["B-", "B", "A♯", "A", "G♯", "G", "F♯", "F", "E", "D♯", "D", "C♯", "C"];
-    Config.keyTransposes = [11, 23,  22,   21,  20,   19,  18,   17,  16,  15,   14,  13,   12 ];
+    Config.keyNames =      ["B", "A♯", "A", "G♯", "G", "F♯", "F", "E", "D♯", "D", "C♯", "C", "B-"];
+    Config.keyTransposes = [23,  22,   21,  20,   19,  18,   17,  16,  15,   14,  13,   12 , 11];
     Config.mixNames =      ["Type A (B & S)", "Type B (M)", "Type C"];
     Config.sampleRateNames =     ["44100kHz", "48000kHz", "default", "×4", "×2", "÷2", "÷4", "÷8", "÷16"];
     Config.tempoSteps = 24;
@@ -1045,7 +1045,7 @@ Config.operatorCarrierChorus = [
             if (andResetChannels === void 0) { andResetChannels = true; }
             this.scale = 0;
 			this.theme = 0;
-            this.key = Config.keyNames.length - 1;
+            this.key = Config.keyNames.length - 2;
 			this.mix = 1;
 			this.sampleRate = 2;
             this.loopStart = 0;
@@ -3642,8 +3642,41 @@ var beepbox;
     const playhead = div({ style: "position: absolute; left: 0; top: 0; width: 2px; height: 100%; background: white; pointer-events: none;" });
     const timelineContainer = div({ style: "display: flex; flex-grow: 1; flex-shrink: 1; position: relative;" }, timeline, playhead);
     const visualizationContainer = div({ style: "display: flex; flex-grow: 1; flex-shrink: 1; height: 0; position: relative; align-items: center; overflow: hidden;" }, timelineContainer);
+    let noteFlashElementsPerBar;
+    let currentNoteFlashElements = [];
+    let currentNoteFlashBar = -1;
+    const notesFlashWhenPlayed = getLocalStorage("notesFlashWhenPlayed") == "true";
+    let noteFlashColor = "#ffffff";
+    let noteFlashColorSecondary = "#ffffff77";;
     document.body.appendChild(visualizationContainer);
     document.body.appendChild(div({ style: `flex-shrink: 0; height: 20vh; min-height: 22px; max-height: 70px; display: flex; align-items: center;` }, playButtonContainer, loopButton, volumeIcon, volumeSlider, zoomButton, titleText, editLink, copyLink, shareLink, fullscreenLink));
+    function setLocalStorage(key, value) {
+        try {
+            localStorage.setItem(key, value);
+        }
+        catch (error) {
+        }
+    }
+    function getLocalStorage(key) {
+        try {
+            return localStorage.getItem(key);
+        }
+        catch (error) {
+            return null;
+        }
+    }
+    function removeFromUnorderedArray(array, index) {
+        if (array.length < 1) {
+            return;
+        }
+        if (index === array.length - 1) {
+            array.pop();
+        }
+        else if (index >= 0 && index < array.length - 1) {
+            const lastElement = array.pop();
+            array[index] = lastElement;
+        }
+    }
     function hashUpdatedExternally() {
         let myHash = location.hash;
         if (prevHash == myHash || myHash == "")
@@ -3762,6 +3795,42 @@ var beepbox;
             playhead.style.left = (timelineWidth * pos) + "px";
             const boundingRect = visualizationContainer.getBoundingClientRect();
             visualizationContainer.scrollLeft = pos * (timelineWidth - boundingRect.width);
+            if (notesFlashWhenPlayed) {
+                const playheadBar = Math.floor(synth.playhead);
+                const modPlayhead = synth.playhead - playheadBar;
+                const partsPerBar = synth.song.beatsPerBar * synth.song.partsPerBeat;
+                const noteFlashElementsForThisBar = noteFlashElementsPerBar[playheadBar];
+                if (noteFlashElementsForThisBar != null && playheadBar !== currentNoteFlashBar) {
+                    for (var i = currentNoteFlashElements.length - 1; i >= 0; i--) {
+                        var element = currentNoteFlashElements[i];
+                        const outsideOfCurrentBar = Number(element.getAttribute("note-bar")) !== playheadBar;
+                        const isInvisible = element.style.opacity === "0";
+                        if (outsideOfCurrentBar && isInvisible) {
+                            removeFromUnorderedArray(currentNoteFlashElements, i);
+                        }
+                    }
+                    for (var i = 0; i < noteFlashElementsForThisBar.length; i++) {
+                        var element = noteFlashElementsForThisBar[i];
+                        currentNoteFlashElements.push(element);
+                    }
+                }
+                if (currentNoteFlashElements != null) {
+                    for (var i = 0; i < currentNoteFlashElements.length; i++) {
+                        var element = currentNoteFlashElements[i];
+                        const noteStart = Number(element.getAttribute("note-start")) / partsPerBar;
+                        const noteEnd = Number(element.getAttribute("note-end")) / partsPerBar;
+                        const noteBar = Number(element.getAttribute("note-bar"));
+                        if ((modPlayhead >= noteStart) && (noteBar == playheadBar)) {
+                            const dist = noteEnd - noteStart;
+                            element.style.opacity = String((1 - (((modPlayhead - noteStart) - (dist / 2)) / (dist / 2))));
+                        }
+                        else {
+                            element.style.opacity = "0";
+                        }
+                    }
+                }
+                currentNoteFlashBar = playheadBar;
+            }
         }
     }
     function renderTimeline() {
@@ -3797,6 +3866,13 @@ var beepbox;
         const drumPitchHeight = (timelineHeight - 1) / beepbox.Config.drumCount;
         for (let octave = 0; octave <= windowOctaves; octave++) {
             timeline.appendChild(rect({ x: 0, y: octave * 12 * wavePitchHeight, width: timelineWidth, height: wavePitchHeight + 1, fill: "#9150ff" }));
+        }
+        if (notesFlashWhenPlayed) {
+            noteFlashElementsPerBar = [];
+            for (let bar = 0; bar < synth.song.barCount; bar++) {
+                noteFlashElementsPerBar.push([]);
+            }
+            currentNoteFlashBar = -1;
         }
         for (let bar = 0; bar < synth.song.barCount + 1; bar++) {
             const color = (bar == synth.song.loopStart || bar == synth.song.loopStart + synth.song.loopLength) ? "#8866ff" : "#444444";
@@ -3835,6 +3911,17 @@ var beepbox;
                         if (isNoise)
                             noteElement.style.opacity = String(0.6);
                         timeline.appendChild(noteElement);
+                        if (notesFlashWhenPlayed) {
+                            const dflash = drawNote(pitch, note.start, note.pins, (pitchHeight + 1) / 2, offsetX, offsetY, partWidth, pitchHeight);
+                            const noteFlashElement = path({ d: dflash, fill: (isNoise ? noteFlashColorSecondary : noteFlashColor) });
+                            noteFlashElement.style.opacity = "0";
+                            noteFlashElement.setAttribute('note-start', String(note.start));
+                            noteFlashElement.setAttribute('note-end', String(note.end));
+                            noteFlashElement.setAttribute('note-bar', String(bar));
+                            timeline.appendChild(noteFlashElement);
+                            const noteFlashElementsForThisBar = noteFlashElementsPerBar[bar];
+                            noteFlashElementsForThisBar.push(noteFlashElement);
+                        }
                     }
                 }
             }

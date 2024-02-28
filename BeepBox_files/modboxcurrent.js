@@ -268,9 +268,8 @@ var beepbox;
         };
         return Config;
     }());
-    Config.scaleNames = ["chromatic", "easy :)", "easy :(", "island :)", "island :(", "blues :)", "megalovania", "major", "minor", "dbl harmonic :)", "dbl harmonic :(", "enigma", "monotonic", "no dabbing"];
+    Config.scaleNames = ["easy :)", "easy :(", "island :)", "island :(", "blues :)", "megalovania", "major", "minor", "dbl harmonic :)", "dbl harmonic :(", "chromatic", "enigma", "monotonic", "no dabbing"];
     Config.scaleFlags = [
-        [true, true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true ],
         [true, false, true,  false, true,  false, false, true,  false, true,  false, false],
         [true, false, false, true,  false, true,  false, true,  false, false, true,  false],
         [true, false, false, false, true,  true,  false, true,  false, false, false, true ],
@@ -281,6 +280,7 @@ var beepbox;
         [true, false, true,  true,  false, true,  false, true,  true,  false, true,  false],
         [true, true,  false, false, true,  true,  false, true,  true,  false, false, true ],
         [true, false, true,  true,  false, false, true,  true,  true,  false, false, true ],
+        [true, true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true ],
         [true, false, true,  false, true,  false, true,  false, true,  false, true,  false],
 		[true, false, false, false, false, false, false, false, false, false, false, false],
 		[true, true,  false, true,  true,  true,  true,  true,  true,  false, true,  false],
@@ -289,13 +289,13 @@ var beepbox;
     Config.blackKeyNameParents = [-1,   1,     -1,    1,    -1,    1,   -1,    -1,    1,    -1,    1,   -1    ];
     Config.pitchNames =          ["C", null, "D", null, "E", "F", null, "G", null, "A", null, "B"];
 	
-	Config.themeNames = ["Nepbox", "Modbox", "ModBox 2.0", "Artic", "Cinnamon Roll [!]", "Ocean", "Rainbow [!]", "Float [!]", "Windows", "Grassland", "Dessert", "Kahootiest", "Beam to the Bit [!]", "Pretty Egg", "Poniryoshka", "Gameboy [!]", "Woodkid", "Midnight", "Snedbox", "unnamed", "Piano [!] [↻]", "Halloween", "FrozenOver❄️"];
+	Config.themeNames = ["Nepbox", "Laffey", "Modbox", "ModBox 2.0", "Artic", "Cinnamon Roll [!]", "Ocean", "Rainbow [!]", "Float [!]", "Windows", "Grassland", "Dessert", "Kahootiest", "Beam to the Bit [!]", "Pretty Egg", "Poniryoshka", "Gameboy [!]", "Woodkid", "Midnight", "Snedbox", "unnamed", "Piano [!] [↻]", "Halloween", "FrozenOver❄️"];
 	
-	volumeColorPallet =            ["#00fff5", "#777777", "#c4ffa3", "#42dcff", "#ba8418", "#090b3a", "#ff00cb", "#878787", "#15a0db", "#74bc21", "#ff0000", "#66bf39", "#fefe00", "#f01d7a", "#ffc100", "#8bac0f", "#ef3027", "#aa5599", "#a53a3d", "#ffffff", "#ff0000", "#9e2200", "#ed2d2d"]
-	sliderOneColorPallet =         ["#00fff5", "#9900cc", "#00ff00", "#ffffff", "#ba8418", "#5982ff", "#ff0000", "#ffffff", "#2779c2", "#a0d168", "#ff6254", "#ff3355", "#fefe00", "#6b003a", "#4b4b4b", "#9bbc0f", "#e83c4e", "#445566", "#a53a3d", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
-	sliderOctaveColorPallet =      ["#484848", "#444444", "#00ff00", "#a5eeff", "#e59900", "#4449a3", "#43ff00", "#ffffff", "#295294", "#74bc21", "#ff5e3a", "#eb670f", "#0001fc", "#ffb1f4", "#5f4c99", "#9bbc0f", "#ef3027", "#444444", "#444444", "#ffffff", "#211616", "#9e2200", "#ffffff"]
-	sliderOctaveNotchColorPallet = ["#9150ff", "#886644", "#ffffff", "#cefffd", "#ffff25", "#3dffdb", "#0400ff", "#c9c9c9", "#fdd01d", "#20330a", "#fff570", "#ff3355", "#fa0103", "#b4001b", "#ff8291", "#8bac0f", "#ffedca", "#aa5599", "#a53a3d", "#ffffff", "#ff4c4c", "#701800", "#ed2d2d"]
-	buttonColorPallet =            ["#484848", "#ffffff", "#00ff00", "#42dcff", "#ffff25", "#4449a3", "#f6ff00", "#000000", "#fdd01d", "#69c400", "#fffc5b", "#66bf39", "#fefe00", "#75093e", "#818383", "#8bac0f", "#ffedca", "#000000", "#ffffff", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
+	volumeColorPallet =            ["#00fff5", "#f2b3ff", "#777777", "#c4ffa3", "#42dcff", "#ba8418", "#090b3a", "#ff00cb", "#878787", "#15a0db", "#74bc21", "#ff0000", "#66bf39", "#fefe00", "#f01d7a", "#ffc100", "#8bac0f", "#ef3027", "#aa5599", "#a53a3d", "#ffffff", "#ff0000", "#9e2200", "#ed2d2d"]
+	sliderOneColorPallet =         ["#00fff5", "#f2b3ff", "#9900cc", "#00ff00", "#ffffff", "#ba8418", "#5982ff", "#ff0000", "#ffffff", "#2779c2", "#a0d168", "#ff6254", "#ff3355", "#fefe00", "#6b003a", "#4b4b4b", "#9bbc0f", "#e83c4e", "#445566", "#a53a3d", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
+	sliderOctaveColorPallet =      ["#484848", "#852929", "#444444", "#00ff00", "#a5eeff", "#e59900", "#4449a3", "#43ff00", "#ffffff", "#295294", "#74bc21", "#ff5e3a", "#eb670f", "#0001fc", "#ffb1f4", "#5f4c99", "#9bbc0f", "#ef3027", "#444444", "#444444", "#ffffff", "#211616", "#9e2200", "#ffffff"]
+	sliderOctaveNotchColorPallet = ["#9150ff", "#f2b3ff", "#886644", "#ffffff", "#cefffd", "#ffff25", "#3dffdb", "#0400ff", "#c9c9c9", "#fdd01d", "#20330a", "#fff570", "#ff3355", "#fa0103", "#b4001b", "#ff8291", "#8bac0f", "#ffedca", "#aa5599", "#a53a3d", "#ffffff", "#ff4c4c", "#701800", "#ed2d2d"]
+	buttonColorPallet =            ["#484848", "#343c99", "#ffffff", "#00ff00", "#42dcff", "#ffff25", "#4449a3", "#f6ff00", "#000000", "#fdd01d", "#69c400", "#fffc5b", "#66bf39", "#fefe00", "#75093e", "#818383", "#8bac0f", "#ffedca", "#000000", "#ffffff", "#ffffff", "#ffffff", "#9e2200", "#38ef17"]
 	
 	// For Piano Theme
 	noteOne =            ["#000000", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#9e2200"]
@@ -312,18 +312,18 @@ var beepbox;
 	noteTwelve =         ["#ffffff","#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#7a7a7a", "#bfbfbf", "#bfbfbf", "#9e2200"]
 	
 	// Gives Color of the Sheet
-	baseNoteColorPallet =           ["#9150ff", "#886644", "#c4ffa3", "#eafffe", "#f5bb00", "#090b3a", "#ffaaaa", "#ffffff", "#da4e2a", "#20330a", "#fffc5b", "#45a3e5", "#fefe00", "#fffafa", "#1a2844", "#9bbc0f", "#fff6fe", "#222222", "#886644", "#ffffa0", "#ffffff", "#681701", "#88bce8"]
-	secondNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffceaa", "#ededed", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]
-	thirdNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffdfaa", "#cecece", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
-	fourthNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#fff5aa", "#bababa", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
-	sixthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e8ffaa", "#afafaf", "#444444", "#444444", "#444444", "#444444", "#fa0103", "#444444", "#faf4c3", "#8bac0f", "#41323b", "#222222", "#10997e", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
-	seventhNoteColorPallet =        ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#bfffb2", "#a5a5a5", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#e5f0f9"]
-	eigthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2ffc8", "#999999", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#ffffff"]
-	fifthNoteColorPallet =          ["#990000", "#446688", "#96fffb", "#b7f1ff", "#f5bb00", "#3f669b", "#b2ffe4", "#8e8e8e", "#5d9511", "#74bc21", "#ff5e3a", "#864cbf", "#111111", "#ff91ce", "#dabbe6", "#306230", "#fff6fe", "#444444", "#60389b", "#ffffa0", "#ffffff", "#914300", "#e5f0f9"]
-	ninthNoteColorPallet =          ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2f3ff", "#828282", "#444444", "#444444", "#444444", "#444444", "#0001fc", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
-	tenNoteColorPallet =            ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2b3ff", "#777777", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
-	elevenNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e0b2ff", "#565656", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
-	twelveNoteColorPallet =         ["#0a2d44", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffafe9", "#282828", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]	
+	baseNoteColorPallet =           ["#9150ff", "#dbbeed", "#886644", "#c4ffa3", "#eafffe", "#f5bb00", "#090b3a", "#ffaaaa", "#ffffff", "#da4e2a", "#20330a", "#fffc5b", "#45a3e5", "#fefe00", "#fffafa", "#1a2844", "#9bbc0f", "#fff6fe", "#222222", "#886644", "#ffffa0", "#ffffff", "#681701", "#88bce8"]
+	secondNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffceaa", "#ededed", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]
+	thirdNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffdfaa", "#cecece", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#9bbc0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
+	fourthNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#fff5aa", "#bababa", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
+	sixthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e8ffaa", "#afafaf", "#444444", "#444444", "#444444", "#444444", "#fa0103", "#444444", "#faf4c3", "#8bac0f", "#41323b", "#222222", "#10997e", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
+	seventhNoteColorPallet =        ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#bfffb2", "#a5a5a5", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#8bac0f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#e5f0f9"]
+	eigthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2ffc8", "#999999", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#ffffff"]
+	fifthNoteColorPallet =          ["#990000", "#6b1313", "#446688", "#96fffb", "#b7f1ff", "#f5bb00", "#3f669b", "#b2ffe4", "#8e8e8e", "#5d9511", "#74bc21", "#ff5e3a", "#864cbf", "#111111", "#ff91ce", "#dabbe6", "#306230", "#fff6fe", "#444444", "#60389b", "#ffffa0", "#ffffff", "#914300", "#e5f0f9"]
+	ninthNoteColorPallet =          ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2f3ff", "#828282", "#444444", "#444444", "#444444", "#444444", "#0001fc", "#444444", "#444444", "#306230", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#cbe0f2"]
+	tenNoteColorPallet =            ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#b2b3ff", "#777777", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#b8d7f2"]
+	elevenNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#e0b2ff", "#565656", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#abd3f4"]
+	twelveNoteColorPallet =         ["#0a2d44", "#1a2182", "#444444", "#444444", "#444444", "#f5bb00", "#444444", "#ffafe9", "#282828", "#444444", "#444444", "#444444", "#444444", "#111111", "#444444", "#444444", "#0f380f", "#41323b", "#222222", "#444444", "#ffffa0", "#ffffff", "#754a3f", "#99c8ef"]	
 	
 	channelOneBrightColorPallet =         ["#f75dff"]
 	channelTwoBrightColorPallet =         ["#ff0000"]
@@ -359,8 +359,8 @@ var beepbox;
 	channelFifteenDimColorPallet =     ["#868686"]
 	channelSixteenDimColorPallet =     ["#6a3500"]
 	
-    Config.keyNames =      ["B-", "B", "A♯", "A", "G♯", "G", "F♯", "F", "E", "D♯", "D", "C♯", "C"];
-    Config.keyTransposes = [11, 23,  22,   21,  20,   19,  18,   17,  16,  15,   14,  13,   12 ];
+    Config.keyNames =      ["B", "A♯", "A", "G♯", "G", "F♯", "F", "E", "D♯", "D", "C♯", "C", "B-"];
+    Config.keyTransposes = [23,  22,   21,  20,   19,  18,   17,  16,  15,   14,  13,   12 , 11];
     Config.mixNames =      ["Type A (B & S)", "Type B (M)", "Type C"];
     Config.sampleRateNames =     ["44100kHz", "48000kHz", "default", "×4", "×2", "÷2", "÷4", "÷8", "÷16"];
     Config.tempoSteps = 24;
@@ -380,7 +380,7 @@ var beepbox;
     Config.partNames =  ["÷3 (triplets)", "÷4 (standard)", "÷6", "÷8", "÷16 (arpfest)", "÷12", "÷9", "÷5", "÷50", "÷24"];
     Config.partCounts = [3,               4,               6,    8,    16,              12,    9,    5,    50,    24   ];
     Config.waveNames =   ["triangle", "square", "pulse wide", "pulse narrow", "sawtooth", "double saw", "double pulse", "spiky", "plateau", "glitch", "10% pulse", "sunsoft bass", "loud pulse", "sax", "guitar", "sine", "atari bass", "atari pulse", "1% pulse", "curved sawtooth", "viola", "brass", "acoustic bass", "lyre", "ramp pulse", "piccolo", "squaretooth", "flatline", "pnryshk a (u5)", "pnryshk b (riff)", "squared saw", "megalovania", "broken triange"];
-    Config.waveVolumes = [1.0,        0.5,      0.5,          0.5,            0.65,       0.5,          0.4,            0.4,     0.94,      0.5,      0.5,         1.0,            0.6,          0.1,   0.25,     1.0,    1.0,          1.0,           1.0,        1.0,               1.0,     1.0,     1.0,             0.2,    0.2,          0.9,       0.9,           1.0,        0.4,                 0.5, 1.0, 1.0, 0.5];
+    Config.waveVolumes = [1.0,        0.5,      0.5,          0.5,            0.65,       0.5,          0.4,            0.4,     0.94,      0.5,      0.5,         1.0,            0.6,          0.1,   0.25,     1.0,    1.0,          1.0,           1.0,        1.0,               1.0,     1.0,     1.0,             0.2,    0.2,          0.9,       0.9,           1.0,        0.4,                 0.5, 1.0, 0.2, 0.2];
     Config.drumNames =           ["retro", "white", "periodic", "detuned periodic", "shine", "hollow", "deep", "cutter", "metallic", "snare"];
     Config.drumVolumes =         [0.25,    1.0,     0.4,        0.3,                0.3,     1.5,      1.5,    0.25,     1.0,       1.0];
     Config.drumBasePitches =     [69,      69,      69,         69,                 69,      96,       120,    96,       96,        69];
@@ -1048,7 +1048,7 @@ Config.operatorCarrierChorus = [
             if (andResetChannels === void 0) { andResetChannels = true; }
             this.scale = 0;
 			this.theme = 0;
-            this.key = Config.keyNames.length - 1;
+            this.key = Config.keyNames.length - 2;
 			this.mix = 1;
 			this.sampleRate = 2;
             this.loopStart = 0;
@@ -3641,6 +3641,7 @@ var beepbox;
             this.showChannels = localStorage.getItem("showChannels") == "true";
             this.showScrollBar = localStorage.getItem("showScrollBar") == "true";
 			this.showVolumeBar = localStorage.getItem("showVolumeBar") == "true";
+            this.notesFlashWhenPlayed = localStorage.getItem("notesFlashWhenPlayed") == "true";
 			this.advancedSettings = localStorage.getItem("advancedSettings") == "true" || localStorage.getItem("advancedSettings") == null;
 			if (localStorage.getItem("volume") != null)
                 this.volume = Number(localStorage.getItem("volume"));
@@ -3715,6 +3716,7 @@ var beepbox;
             localStorage.setItem("showChannels", this.showChannels ? "true" : "false");
             localStorage.setItem("showScrollBar", this.showScrollBar ? "true" : "false");
 			localStorage.setItem("showVolumeBar", this.showVolumeBar ? "true" : "false");
+            localStorage.setItem("notesFlashWhenPlayed", this.notesFlashWhenPlayed ? "true" : "false");
 			localStorage.setItem("advancedSettings", this.advancedSettings ? "true" : "false");
             localStorage.setItem("volume", String(this.volume));
         };
@@ -4050,7 +4052,7 @@ var beepbox;
             if (doc.song.barCount != newValue) {
                 for (var channel = 0; channel < doc.song.getChannelCount(); channel++) {
                     for (var bar = doc.song.barCount; bar < newValue; bar++) {
-                        doc.song.channels[channel].bars[bar] = 1;
+                        doc.song.channels[channel].bars[bar] = 0;
                     }
                     doc.song.channels[channel].bars.length = newValue;
                 }
@@ -4281,6 +4283,22 @@ var beepbox;
     }(beepbox.Change));
     beepbox.ChangeImute = ChangeImute;
 	
+    var ChangeOtherImute = (function (_super){
+        __extends(ChangeOtherImute, _super);
+        function ChangeOtherImute(doc, channelIndex, instrumentIndex, newValue) {
+            var _this = _super.call(this) || this;
+            var oldValue = doc.song.channels[channelIndex].instruments[instrumentIndex].imute;
+            if (oldValue != newValue) {
+                doc.song.channels[channelIndex].instruments[instrumentIndex].imute = newValue;
+                doc.notifier.changed();
+                _this._didSomething();
+            }
+            return _this;
+        }
+        return ChangeOtherImute;
+    }(beepbox.Change));
+    beepbox.ChangeOtherImute = ChangeOtherImute;
+
     var ChangeIpan = (function (_super) {
         __extends(ChangeIpan, _super);
         function ChangeIpan(doc, oldValue, newValue) {
@@ -8576,7 +8594,7 @@ var beepbox;
             this._cancelButton = button({}, [text("Close")]);
             this.container = div({ className: "prompt", style: "width: 250px;" }, [
                 div({ style: "font-size: 2em" }, [text("Song Data")]),
-				div({ style: "text-align: left;" }, [text('You are on update Nepbox 1.0.')]),
+				div({ style: "text-align: left;" }, [text('You are on update Nepbox 1.1.')]),
 				div({ style: "text-align: left;" }, [text('Your song is ' + _this._doc.synth.totalSeconds + ' seconds long.')]),
 				div({ style: "text-align: left;" }, [text('Your song runs at ' + _this._doc.song.getBeatsPerMinute() + ' beats per minute.')]),
 				div({ style: "text-align: left;" }, [text('There are currently ' + _this._doc.song.getChannelUnusedCount() + ' unused channels in your song out of 16.')]),
@@ -8694,6 +8712,7 @@ var beepbox;
                 option("showChannels", "Show All Channels", false, false),
                 option("showScrollBar", "Octave Scroll Bar", false, false),
 				option("showVolumeBar", "Show Channel Volume", false, false),
+                option("noteFlash", "(Song Player Only) Notes Flash when Played", false, false),
 				option("advancedSettings", "Enable Advanced Settings", false, false),
             ]);
 			this._newSongButton = button({ type: "button" }, [
@@ -8826,7 +8845,7 @@ var beepbox;
             this.mainLayer = div({ className: "beepboxEditor", tabIndex: "0" }, [
             this._editorBox,
             div({ className: "editor-widget-column" }, [
-				div({ style: "text-align: center; color: ; align-items: center;" }, [text("Nepbox 1.0")]),
+				div({ style: "text-align: center; color: ; align-items: center;" }, [text("Nepbox 1.1")]),
                 div({ style: "margin: 5px 0; display: flex; flex-direction: row; align-items: center;" }, [
                     this._playButton,
                     div({ style: "width: 1px; height: 10px;" }),
@@ -8925,6 +8944,7 @@ var beepbox;
                     (_this._doc.showChannels ? "✓ " : "✗ ") + "Show All Channels",
                     (_this._doc.showScrollBar ? "✓ " : "✗ ") + "Octave Scroll Bar",
 					(_this._doc.showVolumeBar ? "✓ " : "✗ ") + "Show Channel Volume",
+                    (_this._doc.notesFlashWhenPlayed ? "✓ " : "✗ ") + "(Song Player Only) Notes Flash when Played",
 					(_this._doc.advancedSettings ? "✓ " : "✗ ") + "Enable Advanced Settings",
                 ];
                 for (var i = 0; i < optionCommands.length; i++) {
@@ -9156,6 +9176,37 @@ var beepbox;
 					this.whenUpdated();
                 }
 			};
+            this._soloChannel = function (channelIndexToSolo) {
+                var alreadySoloed = true;
+                outerLoop: for (var i = 0; i < _this._doc.song.getChannelCount(); i++) {
+                    var shouldBeMuted = i != channelIndexToSolo;
+                    var channel = _this._doc.song.channels[i];
+                    for (var insts = 0; insts < channel.instruments.length; insts++) {
+                        var isMuted = channel.instruments[insts].imute == 1;
+                        if (isMuted != shouldBeMuted) {
+                            alreadySoloed = false;
+                            break outerLoop;
+                        }
+                    }
+                }
+                for (var i = 0; i < _this._doc.song.getChannelCount(); i++) {
+                    var channel = _this._doc.song.channels[i];
+                    for (var insts = 0; insts < channel.instruments.length; insts++) {
+                        var instrument = channel.instruments[insts];
+                        _this._doc.record(new beepbox.ChangeOtherImute(_this._doc, i, insts, alreadySoloed ? 0 : (i != channelIndexToSolo ? 1 : 0)));
+                    }
+                }
+                var instrument = _this._doc.song.channels[_this._doc.channel].instruments[_this._doc.getCurrentInstrument()];
+                setSelectedIndex(_this._imuteSelect, instrument.mute);
+                setSelectedIndex(_this._iMmuteSelect, instrument.mute);
+                _this._instrumentSettingsGroup.style.color = "#cccccc";
+                _this._advancedInstrumentSettingsGroup.style.color = "#aaaaaa";
+                _this._advancedSongSettings.style.color = "#aaaaaa";
+                _this._imuteSelect.innerText = "◎";
+                _this._iMmuteSelect.innerText = "◎";
+                _this.whenUpdated();
+            };
+
             this._whenKeyPressed = function (event) {
                 if (_this.prompt) {
                     if (event.keyCode == 27) {
@@ -9165,6 +9216,10 @@ var beepbox;
                 }
                 _this._trackEditor.onKeyPressed(event);
                 switch (event.keyCode) {
+                    case 83:
+                        _this._soloChannel(_this._doc.channel);
+                        event.preventDefault();
+                        break;
                     case 77:
                         _this._muteInstrument();
                         event.preventDefault();
@@ -9424,6 +9479,9 @@ var beepbox;
                         break;
 					case "showVolumeBar":
                         _this._doc.showVolumeBar = !_this._doc.showVolumeBar;
+                        break;
+                    case "noteFlash":
+                         _this._doc.notesFlashWhenPlayed = !_this._doc.notesFlashWhenPlayed;
                         break;
                     case "advancedSettings":
                         _this._doc.advancedSettings = !_this._doc.advancedSettings;
