@@ -370,9 +370,9 @@ var beepbox;
 	Config.detuneRange = 24;
 	Config.muffRange = 24;
     Config.beatsPerBarMin = 1;
-    Config.beatsPerBarMax = 24;
+    Config.beatsPerBarMax = 48;
     Config.barCountMin = 1;
-    Config.barCountMax = 256;
+    Config.barCountMax = 512;
     Config.patternsPerChannelMin = 1;
     Config.patternsPerChannelMax = 128;
     Config.instrumentsPerChannelMin = 1;
@@ -1059,15 +1059,15 @@ Config.operatorCarrierChorus = [
             this.riff = 0;
 			this.detune = 0;
 			this.muff = 0;
-            this.beatsPerBar = 8;
-            this.barCount = 16;
+            this.beatsPerBar = 10;
+            this.barCount = 20;
             this.patternsPerChannel = 8;
             this.partsPerBeat = 4;
             this.volBendCount = 4;
             this.instrumentsPerChannel = 1;
             if (andResetChannels) {
-                this.pitchChannelCount = 4;
-                this.drumChannelCount = 1;
+                this.pitchChannelCount = 8;
+                this.drumChannelCount = 2;
                 for (var channelIndex = 0; channelIndex < this.getChannelCount(); channelIndex++) {
                     if (this.channels.length <= channelIndex) {
                         this.channels[channelIndex] = new Channel();
@@ -8712,7 +8712,7 @@ var beepbox;
                 option("showChannels", "Show All Channels", false, false),
                 option("showScrollBar", "Octave Scroll Bar", false, false),
 				option("showVolumeBar", "Show Channel Volume", false, false),
-                option("noteFlash", "(Song Player Only) Notes Flash when Played", false, false),
+                option("noteFlash", "Notes Flash when Played (Player Only) ", false, false),
 				option("advancedSettings", "Enable Advanced Settings", false, false),
             ]);
 			this._newSongButton = button({ type: "button" }, [
