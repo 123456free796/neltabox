@@ -604,16 +604,16 @@ Config.operatorCarrierChorus = [
         0x21,
     ];
 	
-    Config.drumInterval = 6;
-    Config.drumCount = 12;
-    Config.pitchCount = 37;
-    Config.maxPitch = 84;
+    Config.drumInterval = 60;
+    Config.drumCount = 120;
+    Config.pitchCount = 370;
+    Config.maxPitch = 840;
     Config.pitchChannelCountMin = 0;
-    Config.pitchChannelCountMax = 12;
+    Config.pitchChannelCountMax = 120;
     Config.drumChannelCountMin = 0;
-    Config.drumChannelCountMax = 4;
+    Config.drumChannelCountMax = 40;
     Config.volBendMin = 3;
-    Config.volBendMax = 5;
+    Config.volBendMax = 50;
     Config.waves = [
         Config._centerWave([1.0 / 15.0, 3.0 / 15.0, 5.0 / 15.0, 7.0 / 15.0, 9.0 / 15.0, 11.0 / 15.0, 13.0 / 15.0, 15.0 / 15.0, 15.0 / 15.0, 13.0 / 15.0, 11.0 / 15.0, 9.0 / 15.0, 7.0 / 15.0, 5.0 / 15.0, 3.0 / 15.0, 1.0 / 15.0, -1.0 / 15.0, -3.0 / 15.0, -5.0 / 15.0, -7.0 / 15.0, -9.0 / 15.0, -11.0 / 15.0, -13.0 / 15.0, -15.0 / 15.0, -15.0 / 15.0, -13.0 / 15.0, -11.0 / 15.0, -9.0 / 15.0, -7.0 / 15.0, -5.0 / 15.0, -3.0 / 15.0, -1.0 / 15.0]),
         Config._centerWave([1.0, -1.0]),
